@@ -55,17 +55,17 @@
  * |------+------+------+------+------|                      |------+------+------+------+------|
  * |      |      |      |      |      |                      | LEFT | DOWN |  UP  |RIGHT |  `   |
  * |------+------+------+------+------|  ,-----.    ,-----.  |------+------+------+------+------|
- * |      |      |      |      |      |  |Boot |    |  -  |  |  BSPC|      |      |      |  ~   |
+ * |      |      |      |      | BSPC |  |Boot |    |  -  |  |      |      |      |      |  ~   |
  * `----------------------------------'  `-----'    `-----'  `----------------------------------'
  *                    ,---------------------.            ,---------------------.
  *                    | GUI | LOWER | SPACE |            | ENTER | RAISE | ALT |
  *                    `---------------------'            `---------------------'
  */
             bindings = <
-    &kp N1      &kp N2      &kp N3      &kp N4      &kp N5                       &kp N6      &kp N7  &kp N8      &kp N9      &kp N0
-    &trans      &trans      &trans      &trans      &trans                       &kp EQUAL   &kp N4  &kp N5      &kp N6      &kp PLUS
-    &trans      &trans      &trans      &trans      &trans                       &kp BSPC    &trans  &trans      &trans      &kp ASTERISK
-                &kp LGUI    &trans      &kp SPC     &kp C_MUTE           &none   &kp RET     &mo RAISE   &kp RALT
+    &kp N1      &kp N2      &kp N3      &kp N4      &kp N5                       &kp N6      &kp N7     &kp N8      &kp N9      &kp N0
+    &none       &none       &none       &none       &none                        &kp LEFT    &kp DOWN   &kp UP      &kp RIGHT   &kp GRAVE
+    &none       &none       &none       &none       &kp BSPC                     &none       &none      &none       &none       &kp TILDE
+                &kp LGUI    &trans      &kp SPC     &kp C_MUTE           &none   &kp RET     &mo RAISE  &kp RALT
             >;
 
             sensor-bindings = <
@@ -90,9 +90,9 @@
  */
             bindings = <
     &kp EXCL       &kp AT      &kp HASH    &kp DLLR    &kp PRCNT                &kp CARET       &kp AMPS        &kp ASTRK           &kp LPAR    &kp RPAR
-    &trans          &trans      &trans      &trans      &trans                  &kp UNDER       &kp APOS        &kp DOUBLE_QUOTES   &kp TILDE   &kp GRAVE
-    &trans          &trans      &trans      &trans      &trans                  &trans          &trans          &trans              &trans      &trans
-                    &kp LGUI    &mo LOWER   &kp SPC     &kp C_MUTE      &none   &kp RET         &trans          &kp RALT
+    &none          &none       &none       &none       &none                    &kp MINUS       &kp EQUAL       &kp LBKT            &kp RBKT    &kp BSLH
+    &none          &none       &none       &none       &none                    &kp UNDER       &kp PLUS        &kp LBRC            &kp RBRC    &kp PIPE
+                   &kp LGUI    &mo LOWER   &kp SPC     &kp C_MUTE       &none   &kp RET         &trans          &kp RALT
             >;
 
             sensor-bindings = <
