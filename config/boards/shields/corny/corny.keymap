@@ -53,7 +53,7 @@
  * ,----------------------------------.                      ,----------------------------------.
  * |   1  |  2   |  3   |  4   |   5  |                      |   6  |   7  |   8  |   9  |   0  |
  * |------+------+------+------+------|                      |------+------+------+------+------|
- * | TAB  |      | LCTRL|      |      |                      | LEFT | DOWN |  UP  |RIGHT |  :   |
+ * | TAB  |      | LCTRL| SHIFT|      |                      | LEFT | DOWN |  UP  |RIGHT |  :   |
  * |------+------+------+------+------|  ,-----.    ,-----.  |------+------+------+------+------|
  * | ESC  |      |      | CLCK | BSPC |  |Boot |    |  -  |  |      |      |  `   |  ~   |  ?   |
  * `----------------------------------'  `-----'    `-----'  `----------------------------------'
@@ -63,7 +63,7 @@
  */
             bindings = <
     &kp N1        &kp N2      &kp N3      &kp N4      &kp N5                       &kp N6      &kp N7     &kp N8      &kp N9      &kp N0
-    &kp TAB       &none       &kp LCTRL   &none       &none                        &kp LEFT    &kp DOWN   &kp UP      &kp RIGHT   &kp COLON
+    &kp TAB       &none       &kp LCTRL   &kp LSHIFT  &none                        &kp LEFT    &kp DOWN   &kp UP      &kp RIGHT   &kp COLON
     &kp ESC       &none       &none       &kp CLCK    &kp BSPC                     &none       &none      &kp GRAVE   &kp TILDE   &kp QMARK
                 &kp LGUI    &trans      &kp SPC     &kp C_MUTE           &none   &kp RET     &mo RAISE  &kp RALT
             >;
