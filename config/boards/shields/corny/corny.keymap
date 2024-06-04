@@ -55,7 +55,7 @@
  * |------+------+------+------+------|                      |------+------+------+------+------|
  * | TAB  |      | LCTRL| SHIFT|      |                      | LEFT | DOWN |  UP  |RIGHT |  :   |
  * |------+------+------+------+------|  ,-----.    ,-----.  |------+------+------+------+------|
- * | ESC  |      |CTRL+C| CLCK | BSPC |  |Boot |    |  -  |  |      |      |  `   |  ~   |  ?   |
+ * | ESC  |      |CTRL+C| CLCK | BSPC |  |Boot |    |  -  |  | LGUI |      |  `   |  ~   |  ?   |
  * `----------------------------------'  `-----'    `-----'  `----------------------------------'
  *                    ,---------------------.            ,---------------------.
  *                    | GUI | LOWER | SPACE |            | ENTER | RAISE | ALT |
@@ -64,8 +64,8 @@
             bindings = <
     &kp N1        &kp N2      &kp N3      &kp N4      &kp N5                       &kp N6      &kp N7     &kp N8      &kp N9      &kp N0
     &kp TAB       &none       &kp LCTRL   &kp LSHIFT  &none                        &kp LEFT    &kp DOWN   &kp UP      &kp RIGHT   &kp COLON
-    &kp ESC       &none       &kp LC(C)       &kp CLCK    &kp BSPC                     &none       &none      &kp GRAVE   &kp TILDE   &kp QMARK
-                &kp LGUI    &trans      &kp SPC     &kp C_MUTE           &none   &kp LS(RET)     &mo RAISE  &kp RALT
+    &kp ESC       &none       &kp LC(C)   &kp CLCK    &kp BSPC                     &kp LGUI    &none      &kp GRAVE   &kp TILDE   &kp QMARK
+                  &kp LGUI    &trans      &kp SPC     &kp C_MUTE           &none   &kp LS(RET)     &mo RAISE  &kp RALT
             >;
 
             sensor-bindings = <
