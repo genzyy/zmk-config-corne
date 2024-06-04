@@ -90,8 +90,8 @@
  */
             bindings = <
     &kp EXCL       &kp AT      &kp HASH    &kp DLLR    &kp PRCNT                &kp CARET       &kp AMPS        &kp ASTRK           &kp LPAR    &kp RPAR
-    &kp LC(N1)     &kp LC(N2)  &kp LC(N3)  &none       &none                    &kp MINUS       &kp EQUAL       &kp LBKT            &kp RBKT    &kp BSLH
-    &none          &none       &none       &none       &none                    &kp UNDER       &kp PLUS        &kp LBRC            &kp RBRC    &kp PIPE
+    &kp LC(N1)     &kp LC(N2)  &kp LC(N3)  &kp SQT     &kp DQT                    &kp MINUS       &kp EQUAL       &kp LBKT            &kp RBKT    &kp BSLH
+    &kp LG(N1)     &kp LG(N2)  &kp LG(N3)  &none       &none                    &kp UNDER       &kp PLUS        &kp LBRC            &kp RBRC    &kp PIPE
                    &kp LGUI    &mo LOWER   &kp SPC     &kp C_MUTE       &none   &kp RET         &trans          &kp RALT
             >;
 
