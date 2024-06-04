@@ -55,7 +55,7 @@
  * |------+------+------+------+------|                      |------+------+------+------+------|
  * | TAB  |      | LCTRL| SHIFT|      |                      | LEFT | DOWN |  UP  |RIGHT |  :   |
  * |------+------+------+------+------|  ,-----.    ,-----.  |------+------+------+------+------|
- * | ESC  |      |      | CLCK | BSPC |  |Boot |    |  -  |  |      |      |  `   |  ~   |  ?   |
+ * | ESC  |      |CTRL+C| CLCK | BSPC |  |Boot |    |  -  |  |      |      |  `   |  ~   |  ?   |
  * `----------------------------------'  `-----'    `-----'  `----------------------------------'
  *                    ,---------------------.            ,---------------------.
  *                    | GUI | LOWER | SPACE |            | ENTER | RAISE | ALT |
@@ -64,8 +64,8 @@
             bindings = <
     &kp N1        &kp N2      &kp N3      &kp N4      &kp N5                       &kp N6      &kp N7     &kp N8      &kp N9      &kp N0
     &kp TAB       &none       &kp LCTRL   &kp LSHIFT  &none                        &kp LEFT    &kp DOWN   &kp UP      &kp RIGHT   &kp COLON
-    &kp ESC       &none       &none       &kp CLCK    &kp BSPC                     &none       &none      &kp GRAVE   &kp TILDE   &kp QMARK
-                &kp LGUI    &trans      &kp SPC     &kp C_MUTE           &none   &kp RET     &mo RAISE  &kp RALT
+    &kp ESC       &none       &kp LC(C)       &kp CLCK    &kp BSPC                     &none       &none      &kp GRAVE   &kp TILDE   &kp QMARK
+                &kp LGUI    &trans      &kp SPC     &kp C_MUTE           &none   &kp LS(RET)     &mo RAISE  &kp RALT
             >;
 
             sensor-bindings = <
@@ -80,9 +80,9 @@
  * ,----------------------------------.                      ,----------------------------------.
  * |   !  |   @  |   #  |   $  |   %  |                      |   ^  |  &   |   *  |  (   |   )  |
  * |------+------+------+------+------|                      |------+------+------+------+------|
- * |      |      |      |      |      |                      |   -  |   =  |   [  |   ]  |   \  |
+ * |  W1  |  W2  |  W3  |   '  |   "  |                      |   -  |   =  |   [  |   ]  |   \  |
  * |------+------+------+------+------|  ,-----.    ,-----.  |------+------+------+------+------|
- * |      |      |      |      |      |  |  -  |    |Boot |  |   _  |   +  |   {   |  }  |  |   |
+ * |  T1  |  T2  |  T3  |   <  |   >  |  |  -  |    |Boot |  |   _  |   +  |   {   |  }  |  |   |
  * `----------------------------------'  `-----'    `-----'  `----------------------------------'
  *                    ,---------------------.            ,---------------------.
  *                    | GUI | LOWER | SPACE |            | ENTER | RAISE | ALT |
@@ -90,8 +90,8 @@
  */
             bindings = <
     &kp EXCL       &kp AT      &kp HASH    &kp DLLR    &kp PRCNT                &kp CARET       &kp AMPS        &kp ASTRK           &kp LPAR    &kp RPAR
-    &none          &none       &none       &none       &none                    &kp MINUS       &kp EQUAL       &kp LBKT            &kp RBKT    &kp BSLH
-    &none          &none       &none       &none       &none                    &kp UNDER       &kp PLUS        &kp LBRC            &kp RBRC    &kp PIPE
+    &kp LC(1)      &kp LC(2)   &kp LC(3)   &kp SQT     &kp DQT                  &kp MINUS       &kp EQUAL       &kp LBKT            &kp RBKT    &kp BSLH
+    &kp LG(1)      &kp LG(2)   &kp LG(3)   &kp LT      &kp RT                   &kp UNDER       &kp PLUS        &kp LBRC            &kp RBRC    &kp PIPE
                    &kp LGUI    &mo LOWER   &kp SPC     &kp C_MUTE       &none   &kp RET         &trans          &kp RALT
             >;
 
