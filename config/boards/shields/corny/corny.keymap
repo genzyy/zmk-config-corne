@@ -53,9 +53,9 @@
  * ,----------------------------------.                      ,----------------------------------.
  * |   1  |  2   |  3   |  4   |   5  |                      |   6  |   7  |   8  |   9  |   0  |
  * |------+------+------+------+------|                      |------+------+------+------+------|
- * | TAB  |      | LCTRL| SHIFT|      |                      | LEFT | DOWN |  UP  |RIGHT |  :   |
+ * | TAB  |      | LCTRL| SHIFT| C+S+T|                      | LEFT | DOWN |  UP  |RIGHT |  :   |
  * |------+------+------+------+------|  ,-----.    ,-----.  |------+------+------+------+------|
- * | ESC  |      |CTRL+C| CLCK | BSPC |  |Boot |    |  -  |  | LGUI |      |  `   |  ~   |  ?   |
+ * | ESC  |      |CTRL+C| CLCK | BSPC |  |Boot |    |  -  |  | C+S+N| LGUI |  `   |  ~   |  ?   |
  * `----------------------------------'  `-----'    `-----'  `----------------------------------'
  *                    ,---------------------.            ,---------------------.
  *                    | GUI | LOWER | SPACE |            | ENTER | RAISE | ALT |
@@ -63,8 +63,8 @@
  */
             bindings = <
     &kp N1        &kp N2      &kp N3      &kp N4      &kp N5                       &kp N6      &kp N7     &kp N8      &kp N9      &kp N0
-    &kp TAB       &none       &kp LCTRL   &kp LSHIFT  &none                        &kp LEFT    &kp DOWN   &kp UP      &kp RIGHT   &kp COLON
-    &kp ESC       &none       &kp LC(C)   &kp CLCK    &kp BSPC                     &kp LGUI    &none      &kp GRAVE   &kp TILDE   &kp QMARK
+    &kp TAB       &none       &kp LCTRL   &kp LSHIFT  &kp LC(LS(T))                &kp LEFT    &kp DOWN   &kp UP      &kp RIGHT   &kp COLON
+    &kp ESC       &none       &kp LC(C)   &kp CLCK    &kp BSPC                     &kp LC(LS(N)) &kp LGUI      &kp GRAVE   &kp TILDE   &kp QMARK
                   &kp LGUI    &trans      &kp SPC     &kp C_MUTE           &none   &kp LS(RET)     &mo RAISE  &kp RALT
             >;
 
